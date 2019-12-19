@@ -4,7 +4,7 @@ from model_app.models import Students
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Hey")
+    return HttpResponse("Hey There!")
 
 def home(request):
     return render(request, 'index.html')
