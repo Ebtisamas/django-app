@@ -19,5 +19,6 @@ from model_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('model_app.urls')),
     path('model_app/', include('model_app.urls'))
 ]

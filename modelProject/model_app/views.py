@@ -3,6 +3,9 @@ from django.http import HttpResponse
 from model_app.models import Students
 
 # Create your views here.
+def index(request):
+    return HttpResponse("Hey")
+
 def home(request):
     return render(request, 'index.html')
 
